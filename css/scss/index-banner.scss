@@ -1,0 +1,238 @@
+.home-banner {
+    background-color: $corPrincipal;
+    background-image: url('../img/background-rose-burguer.jpg');
+    background-size: cover;
+    background-position: center;
+    color: $corBranco;
+    height: 80vh;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .list-buttons {
+        text-align: center;
+        h3 {
+            color: $corPrincipal;
+            font-weight: 500;
+        }
+        .buttons-content {
+            display: flex;
+            justify-content: center;
+            .single-buttons {
+                margin: 15px;
+                .button-pedido {
+                    border-radius: 5px;
+                    width: 200px;
+                    padding: 15px 10px;
+                    img {
+                        
+                        max-height: 30px;
+                    }
+                    &:hover {
+                        background-color: #bd6417;
+                    }
+                    &.button-ifood {
+                        background-color: #EA1D2C;
+                        &:hover {background-color: #AA0D0C;}
+                    }
+                    &.button-uber {
+                        background-color: #001E24;
+                        &:hover {background-color: #000C04;}
+                    }
+                    &.button-goomer {
+                        background-color: #2B00FF;
+                        &:hover {background-color: #0B009F;}
+                    }
+                }
+                
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .content-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0px;
+        img {
+            max-width: 130px;
+            display: block;
+        }
+        h1 {
+            font-size: 30px;
+            padding: 12px 0px 5px;
+        }
+        p {
+            text-transform: uppercase;
+            padding: 5px 0px;
+        }
+    }
+    .home-banner-socials {
+        padding: 5px 0px;
+        h3 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+        .list-socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .single-social {
+                padding: 15px 12px;
+                a {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $xsWidth) {
+
+    .home-banner {
+        .content-banner {
+            img {
+                max-width: 120px;
+            }
+        }
+        .list-buttons {
+            h3 {
+                font-size: 14px;
+            }
+            .buttons-content {
+                display: block;
+                .single-buttons {
+                    margin: 0px;
+                    .button-pedido {
+                        padding: 7px 10px;
+                        margin: 10px;
+                        img {
+                            max-height: 22px;
+                        }
+                    }
+                    p {
+                        margin-bottom: 0px;
+                        font-size: 12px;
+                        color: #b7b7b7;
+                    }
+                }
+            }
+        }
+        .home-banner-socials {
+            h3 {
+                font-size: 0.9em;
+            }
+            .list-socials {
+                .single-social {
+                    padding: 0px 10px;
+                    a {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+
+    .home-banner {
+        .content-banner {
+            img {
+                max-width: 120px;
+            }
+        }
+        .list-buttons {
+            h3 {
+                font-size: 22px;
+            }
+            .buttons-content {
+                display: block;
+                .single-buttons {
+                    margin: 0px;
+                    .button-pedido {
+                        padding: 12px 10px;
+                        margin: 10px;
+                        img {
+                            max-height: 32px;
+                        }
+                    }
+                    p {
+                        margin-bottom: 0px;
+                        font-size: 14px;
+                        color: #b7b7b7;
+                    }
+                }
+            }
+        }
+        .home-banner-socials {
+            h3 {
+                font-size: 1.2em;
+            }
+            .list-socials {
+                .single-social {
+                    padding: 0px 10px;
+                    a {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+    
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+    .home-banner {
+        .list-buttons {
+            h3 {
+                
+            }
+            .buttons-content {
+                .single-buttons {
+                    .button-pedido {
+                        img {
+                            
+                        }
+                    }
+                    
+                    p {
+
+                    }
+                }
+            }
+        }
+        .content-banner {
+            img {
+                
+            }
+            h1 {
+                
+            }
+            p {
+                
+            }
+        }
+        .home-banner-socials {
+            h3 {
+
+            }
+            .list-socials {
+                .single-social {
+                    a {
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (min-width: $xlWidth) {
+    
+}

@@ -1,0 +1,92 @@
+section.section-products {
+    .content-products {
+        padding-top: 15px;
+        .left-top { background-image: url('../img/products/left-top.jpg'); }
+        .left-bottom { background-image: url('../img/products/left-bottom.jpg'); }
+        .main { background-image: url('../img/products/main.jpg'); }
+        .right-top { background-image: url('../img/products/right-top.jpg'); }
+        .right-bottom { background-image: url('../img/products/right-bottom.jpg'); }
+        .left-top, .left-bottom, .right-top, .right-bottom {
+            background-size: cover;
+            background-position: center;
+            height: 320px;
+            &:first-child {
+                
+                margin-bottom: 26px;
+            }
+        }
+        .main {
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: $xsWidth) {
+    section.section-products {
+        .content-products {
+            .left-top, .left-bottom, .right-top, .right-bottom {
+                height: 100px;
+                &:first-child {
+                    margin-bottom: 15px;
+                }
+            }
+            .main {
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+            }
+        }
+    }
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+    section.section-products {
+        .content-products {
+            .left-top, .left-bottom, .right-top, .right-bottom {
+                height: 170px;
+                &:first-child {
+                    margin-bottom: 15px;
+                }
+            }
+            .main {
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+            }
+        }
+    }
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) { 
+    section.section-products {
+        .content-products {
+            .left-top, .left-bottom, .right-top, .right-bottom {
+                height: 160px;
+                &:first-child {
+                    
+                }
+            }
+            .main {
+                
+            }
+        }
+    }
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+    section.section-products {
+        .content-products {
+            .left-top, .left-bottom, .right-top, .right-bottom {
+                height: 210px;
+                &:first-child {
+                    
+                }
+            }
+            .main {
+
+            }
+        }
+    }
+}
+@media screen and (min-width: $xlWidth) {
+    
+}

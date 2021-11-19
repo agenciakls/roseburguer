@@ -1,0 +1,159 @@
+/* GLOBAL */
+* { margin: 0px; word-wrap: break-word; -webkit-font-smoothing: antialiased;}
+body, html { margin: 0px; padding: 0px; font-family: $fontPrincipal; }
+body { background-color: $corBranco; color: $corPrincipal; }
+a, a:hover, a:active, a:focus, a:visited { cursor: pointer; text-decoration: none; color: $corSecundaria; }
+
+/* TÍTULOS E TEXTOS */
+main { 
+	font-size: 18px; 
+	min-height: 500px;
+	h1, h2, h3, h4, h5, h6 {
+		padding: 5px 0px;
+		&.title {
+			padding: 20px 0px;
+		}
+	}
+}
+section.section-default { padding: 20px 0px; }
+h1, h2, h3, h4, h5, h6 { 
+	font-family: $fontPrincipal;
+	font-weight: 800;
+	margin: 0px;
+	&.title {
+		text-transform: uppercase;
+		text-align: left;
+		padding: 20px 0px;
+		font-weight: 800;
+		color: $corPrincipal;
+	}
+}
+h1 { text-transform: uppercase; }
+h2 { font-size: 25px; padding: 5px 0px; text-align: center; color: $corPrincipal; }
+h2.title-section {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+/* ELEMENTOS */
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+img { max-width: 100%; }
+
+.input-contato, .area-contato, input[type=text], input[type=email], input[type=tel], select, textarea {
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: solid 1.4px $corBranco;
+    font-size: 16px;
+    color: $corPrincipal;
+    background-color: transparent;
+    text-transform: uppercase;
+    &::placeholder {
+    	color: $corBranco !important;
+    }
+}
+input:focus, textarea:focus, button:focus { outline: none !important; }
+input[type=button], input[type=submit], input[type=reset], button, .btn {
+    background-color: $corPrincipal;
+    margin: 15px auto;
+    padding: 8px 30px;
+    color: $corSecundaria !important;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 21px;
+    word-wrap: break-word;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    &:hover, &:active {
+        background-color: $corPrincipalHover;
+    }
+    &.btn-reverse {
+        background-color: $corSecundaria;
+        color: $corPrincipal !important;
+        &:hover, &:active {
+            background-color: $corSecundariaHover;
+        }
+    }
+}
+
+/* CONTACT FORM */
+/* CONTACT FORM */
+span.wpcf7-not-valid-tip {
+    display: none !important;
+}
+div.wpcf7-response-output {
+    background-color: #efefef !important;
+    color: #cc2e2e !important;
+    border: dashed 2px #cc2e2e !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    font-size: 19px !important;
+    font-weight: 600 !important;
+    margin: 0px !important;
+    padding: 6px 3px !important;
+}
+.form-check-input {
+    position: relative !important;
+}
+
+/* PAGINATION */
+.pagination{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+    li{
+        display: inline-block;
+        margin: 0px 5px;
+        a {
+            background-color: $corPrincipal;
+            border: 1px solid $corPrincipal;
+            padding: 8px 15px;
+            border-radius: 6px;
+            font-size: 17px;
+            text-align: center;
+            color: $corBranco;
+            transition: ease .3s all;
+            &.current { color: $corSecundaria; }
+            &:hover {
+                background-color: #fff;
+                color: #016b27;
+            }
+        }
+    }
+}
+
+/* WORDPRESS */
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+@media screen and (max-width: $xsWidth) {
+    input[type=button], input[type=submit], input[type=reset], button, .btn  {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+    section.section-default { padding: 30px 0px; }
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+    section.section-default { padding: 40px 0px; }
+}
+@media screen and (min-width: $xlWidth) {
+    section.section-default { padding: 50px 0px; }
+}
